@@ -34,7 +34,7 @@
 
   </head>
 
-  <body id="page-top">
+  <body id="page-top" class="sidebar-toggled">
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
@@ -71,7 +71,7 @@
     <div id="wrapper">
 
       <!-- Sidebar -->
-      <ul class="sidebar navbar-nav">
+      <ul class="sidebar navbar-nav toggled">
         <li class="nav-item">
           <a class="nav-link" href="../index.html">
             <i class="fas fa-fw fa-home"></i>
@@ -117,6 +117,11 @@
           <!-- Page Content -->
 
           <div id="emplDet"></div>
+          <div id="map"></div>
+          <section>
+            <h3>Subordinates</h3>
+            <div id="subordinatesList"></div>
+          </section>
 
 
         </div>
@@ -167,6 +172,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2joOtmQhyWMEr6w3xy3atotOnkJGJ7XI"
+            type="text/javascript"></script>
 
     <!-- Custom scripts for all pages-->
     <script src="../lib/sb-admin/sb-admin.min.js"></script>

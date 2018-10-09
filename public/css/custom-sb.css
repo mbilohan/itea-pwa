@@ -45,6 +45,8 @@ li.nav-item.active a{
     border-bottom: 1px solid #ededed;
 }
 
+#map { height: 300px; max-width: 500px; margin: 40px 0; }
+
 @media (min-width: 768px) {
   .sidebar-toggled .container-fluid {
       padding-left: 100px;

@@ -32,7 +32,7 @@ fetch(ew.apis.employees)
 
         dbRequest.onerror = function(error) {
             throw new Error(error);
-        }
+        };
 
         dbRequest.onupgradeneeded = function(event) {
             var db = event.target.result;
@@ -41,7 +41,7 @@ fetch(ew.apis.employees)
                 var employeesStore = db.createObjectStore('employees', { keyPath: 'id' });
                 employeesStore.createIndex('bossid', 'bossid', {unique: false});
             }
-        }
+        };
 
         dbRequest.onsuccess = function(event) {
             db = event.target.result;
@@ -52,7 +52,7 @@ fetch(ew.apis.employees)
                     employeesTransaction.put(arrUsers[i]);
                 }
             }
-        }
+        };
     })
     .catch(function(error) {
         console.log(error);
